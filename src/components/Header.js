@@ -9,10 +9,10 @@ function Header() {
         <img src={Logo} alt="woof and dine logo" />
       </div>
       <div className="header-nav">
-        <Link to="/Restaurants" className="header-nav__find">
+        <Link to="/Restaurants" className="header-nav__link">
           FIND A RESTAURANT
         </Link>
-        <Link to="/About" className="header-nav__about">
+        <Link to="/About" className="header-nav__link">
           ABOUT US
         </Link>
       </div>

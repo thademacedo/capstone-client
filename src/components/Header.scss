@@ -9,7 +9,18 @@
   padding: 1rem;
 }
 
-.header-nav__find,
-.header-nav__about {
+.header-nav__link {
   margin: 1rem;
+  text-decoration: none;
+  font-weight: bold;
+  background-color: darkgoldenrod;
+  border-radius: 1.25rem;
+  padding: 1rem;
+  margin: 0 1rem;
+  color: firebrick;
+}
+
+.header-nav__link:hover {
+  background-color: burlywood;
+  color: white;
 }
