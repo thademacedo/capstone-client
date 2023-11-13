@@ -1,0 +1,15 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-logo {
+  display: flex;
+  padding: 1rem;
+}
+
+.header-nav__find,
+.header-nav__about {
+  margin: 1rem;
+}
