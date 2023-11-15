@@ -1,7 +1,12 @@
+@use "../styles/partials/mixins" as *;
+@use "../styles/partials/variables" as *;
+@use "../styles/partials/typography" as *;
+
 .header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-family: "Merriweather";
 }
 
 .header-logo {
@@ -9,7 +14,18 @@
   padding: 1rem;
 }
 
-.header-nav__find,
-.header-nav__about {
+.header-nav__link {
   margin: 1rem;
+  text-decoration: none;
+  font-weight: bold;
+  background-color: #b8860b;
+  border-radius: 1.25rem;
+  padding: 1rem;
+  margin: 0 1rem;
+  color: #b22222;
+}
+
+.header-nav__link:hover {
+  background-color: #deb887;
+  color: #ffffff;
 }

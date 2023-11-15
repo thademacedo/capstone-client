@@ -4,6 +4,7 @@ import "./App.scss";
 import Header from "./components/Header";
 import Restaurants from "./pages/Restaurants";
 import About from "./pages/About";
+import "./styles/partials/_mixins.scss";
 
 function App() {
   return (
