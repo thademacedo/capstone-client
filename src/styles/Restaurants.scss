@@ -1,0 +1,85 @@
+@use "../styles/partials/mixins" as *;
+@use "../styles/partials/variables" as *;
+@use "../styles/partials/typography" as *;
+
+.restaurant-nav,
+.restaurant-nav__form,
+h3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Merriweather";
+}
+
+.restaurant-nav {
+  @include tablet {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  @include desktop {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 8rem;
+  }
+}
+
+.restaurant-nav__container,
+.restaurant-nav__button {
+  font-family: "Merriweather";
+}
+
+.restaurant-nav__dog {
+  height: 20rem;
+  width: 20rem;
+  padding: 3rem;
+}
+
+.restaurant-nav__container {
+  padding-bottom: 1rem;
+}
+
+.restaurant-nav__result {
+  padding-top: 1rem;
+  @include tablet {
+    padding: 3rem;
+  }
+  @include desktop {
+    padding: 3rem;
+  }
+}
+
+.restaurant-nav__form {
+  @include tablet {
+    padding: 3rem;
+  }
+  @include desktop {
+    padding: 7rem;
+  }
+}
+
+.restaurant-nav__input {
+  width: 15rem;
+}
+
+h3 {
+  width: 9rem;
+  text-align: center;
+  margin-left: 3rem;
+  margin-top: 0;
+  @include tablet {
+    width: 9rem;
+    text-align: center;
+    margin-left: 3rem;
+  }
+  @include desktop {
+    width: 9rem;
+    text-align: center;
+    margin-left: 3rem;
+  }
+}
+
+.restaurant-nav__button {
+  width: 9rem;
+}
