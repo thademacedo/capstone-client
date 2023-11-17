@@ -1,7 +1,19 @@
 import "../styles/Restaurants.scss";
 import Doggo from "../assets/images/image2.jpg";
+import { useEffect, useState } from "react";
+import axios from "axios";
+import RestaurantsList from "../components/RestaurantsList";
 
 function Restaurants() {
+  const [restaurants, setRestaurants] = useState("");
+
+  useEffect(() => {
+    axios.get("http://localhost:8888/restaurants").then((response) => {
+      console.log(response.data);
+      setRestaurants(response.data);
+    });
+  }, []);
+
   return (
     <div className="restaurant-nav">
       <div className="restaurant-nav__pic">
@@ -27,7 +39,8 @@ function Restaurants() {
           </button>
         </form>
       </div>
-      <div className="restaurant-nav__result">SEARCH RESULT DISPLAY</div>
+
+      <RestaurantsList restaurants={restaurants} />
     </div>
   );
 }
