@@ -5,14 +5,28 @@ const SingleRestaurant = ({ restaurant }) => {
     <div className="restaurant">
       <hr />
       <img src={restaurant.image_url} className="restaurant-pic" />
-      <p className="restaurant-name">{restaurant.name}</p>
-      <p className="restaurant-review">Rating: {restaurant.rating}</p>
-      <p className="restaurant-price">Price Range: {restaurant.price}</p>
+      <p className="restaurant-name">
+        <b>{restaurant.name}</b>
+      </p>
+      {/* <p className="restaurant-rating">
+        <b>Category:</b> {restaurant.categories.alias}
+      </p> */}
+      <p className="restaurant-rating">
+        <b>Rating:</b> {restaurant.rating} out of 5
+      </p>
+      <p className="restaurant-price">
+        <b>Price: </b>
+        {restaurant.price} out of $$$
+      </p>
       <p className="restaurant-location">
-        Address: {restaurant.location.address1} {restaurant.location.address2}
+        <b>Address: </b>
+        {restaurant.location.address1} {restaurant.location.address2}
         {restaurant.location.address3} - {restaurant.location.city}
       </p>
-      <p className="restaurant-phone">Phone: {restaurant.display_phone}</p>
+      <p className="restaurant-phone">
+        <b>Phone: </b>
+        {restaurant.display_phone}
+      </p>
     </div>
   );
 };
