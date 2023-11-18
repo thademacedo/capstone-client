@@ -16,7 +16,7 @@ const SingleRestaurant = ({ restaurant }) => {
       </p>
       <p className="restaurant-price">
         <b>Price: </b>
-        {restaurant.price} out of $$$
+        {restaurant.price} out of $$
       </p>
       <p className="restaurant-location">
         <b>Address: </b>
