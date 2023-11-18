@@ -1,0 +1,47 @@
+@use "../styles/partials/mixins" as *;
+@use "../styles/partials/variables";
+@use "../styles/partials/typography";
+
+.restaurant {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: rgb(223, 188, 142);
+  background: linear-gradient(
+    295deg,
+    rgba(223, 188, 142, 1) 41%,
+    rgba(242, 241, 188, 1) 86%
+  );
+  border-radius: 1.25rem;
+  padding: 1rem;
+  // margin: 0 1rem;
+}
+
+.restaurant-pic {
+  width: 250px;
+  height: 200px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 1.25rem;
+}
+
+div.restaurant {
+  margin: 1rem;
+  @include tablet {
+    margin-left: 15rem;
+  }
+  @include desktop {
+    margin-left: 15rem;
+  }
+}
+
+.restaurant-name,
+.restaurant-rating,
+.restaurant-price,
+.restaurant-location,
+.restaurant-city,
+.restaurant-phone {
+  margin: 0.25rem;
+}
