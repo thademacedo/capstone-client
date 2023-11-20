@@ -2,6 +2,11 @@
 
 Woof and Dine leverages Yelp's API to showcase dog-friendly establishments in the specified Metro Vancouver city entered by the user. Exclusively featuring restaurants and bars that welcome dogs, Woof and Dine streamlines the process, making it more convenient for individuals to share quality time with their beloved pups and contribute to the overall well-being of our cherished furry companions.
 
+## Repositories
+
+- Client: https://github.com/thademacedo/capstone-client
+- Server: https://github.com/thademacedo/capstone-server
+
 ## Technologies
 
 - HTML5
