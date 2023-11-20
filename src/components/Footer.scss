@@ -1,0 +1,20 @@
+@use "../styles/partials/mixins" as *;
+@use "../styles/partials/variables" as *;
+@use "../styles/partials/typography" as *;
+
+.footer {
+  display: flex;
+  font-family: "Merriweather";
+  font-size: x-small;
+  background-color: #deb887;
+}
+
+.footer-logo {
+  width: 1rem;
+}
+
+section.footer {
+  justify-content: space-evenly;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}

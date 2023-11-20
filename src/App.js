@@ -5,6 +5,7 @@ import Header from "./components/Header";
 import Restaurants from "./pages/Restaurants";
 import About from "./pages/About";
 import "./styles/partials/_mixins.scss";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path="/Restaurants" element={<Restaurants />} />
           <Route path="/About" element={<About />} />
         </Routes>
+        <Footer />
       </div>
     </Router>
   );

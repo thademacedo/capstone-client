@@ -7,7 +7,10 @@ function Header() {
   return (
     <section className="header">
       <div className="header-logo">
-        <img src={Logo} alt="woof and dine logo" />
+        <Link to="/Restaurants">
+          {" "}
+          <img src={Logo} alt="woof and dine logo" />
+        </Link>
       </div>
       <div className="header-nav">
         <Link to="/Restaurants" className="header-nav__link">

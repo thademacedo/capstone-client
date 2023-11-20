@@ -1,0 +1,25 @@
+@use "../styles/partials/mixins" as *;
+@use "../styles/partials/variables";
+@use "../styles/partials/typography";
+
+.info {
+  font-family: "Merriweather";
+  margin: 3rem;
+  @include tablet {
+    text-align: center;
+  }
+  @include desktop {
+    text-align: center;
+  }
+}
+
+.about-pic__dog {
+  height: 20rem;
+  width: 20rem;
+  @include tablet {
+    display: inline-block;
+  }
+  @include desktop {
+    display: inline-block;
+  }
+}
