@@ -22,8 +22,8 @@ Woof and Dine leverages Yelp's API to showcase dog-friendly establishments in th
 ## How does it work
 
 Woof and Dine use Yelp Fusion API to find dog-friendly restaurants in Metro Vancouver once the user enters a city an click the "Fetch" button.
-![App demo 1](../../app1.png)
-![App demo 2](../../app2.png)
+![App demo 1](../client/src/assets/images/app1.png)
+![App demo 2](../client/src/assets/images/app2.png)
 
 ## Challenges
 
